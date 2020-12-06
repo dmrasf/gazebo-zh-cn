@@ -1,6 +1,5 @@
-# ROS control
---------
-# 教程：ROS控制
+## ROS control
+## 教程：ROS控制
 
 在本教程中，我们将设置模拟控制器来驱动机器人的关节。这将使我们能够为像[MoveIt!](http://moveit.ros.org/)这样的规划者提供正确的ROS接口。我们将使用[ros_control](http://ros.org/wiki/ros_control)包，这是ROS中控制器接口的一个新标准
 
@@ -16,7 +15,7 @@
 
 # 预备知识
 
-本教程建立在之前教程中的许多概念基础上。我们将再次使用[Using URDF in Gazebo](http://gazebosim.org/tutorials/?tut=ros_urdf)中设置的RRBot，作为这里所涉及的插件的例子
+本教程建立在之前教程中的许多概念基础上。我们将再次使用[Using URDF in Gazebo](./URDF%20in%20Gazebo.md)中设置的RRBot，作为这里所涉及的插件的例子
 
 # 用法
 

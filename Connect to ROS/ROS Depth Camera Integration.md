@@ -1,6 +1,5 @@
-# ROS深度相机集成
---------
-# ROS 使用 Gazebo 的深度相机
+## ROS深度相机集成
+## ROS 使用 Gazebo 的深度相机
 
 #### 介绍
 
@@ -14,7 +13,7 @@
 
 ##### 预备知识
 
-在做本教程之前，你应该安装[gazebo_ros_pkgs](http://gazebosim.org/tutorials?tut=ros_installing&cat=connect_ros)
+在做本教程之前，你应该安装[gazebo_ros_pkgs](./Installing%20gazebo_ros_pkgs(ROS%201).md)
 
 #### 使用深度摄像头插件创建 Gazebo 模型
 
@@ -28,7 +27,7 @@
 
 无论你如何获得它，将`kinect`文件夹复制到你的`~/.gazebo/models`目录下。然后，将你的模型名称改为有意义的东西，比如`kinect_ros`。要改变模型的名称，你应该更新文件夹名称、存储在`.config`文件中的`<name>`和`model.sdf`文件中的模型名称
 
-现在你需要添加ROS插件来发布深度相机信息并输出到ROS主题。ROS插件的列表，以及示例代码，可以在[plugin tutorial](http://gazebosim.org/tutorials?tut=ros_gzplugins&cat=connect_ros)中找到
+现在你需要添加ROS插件来发布深度相机信息并输出到ROS主题。ROS插件的列表，以及示例代码，可以在[plugin tutorial](./Gazebo%20plugins%20in%20ROS.md)中找到
 
 在本教程中，你将使用通用的 "Openni Kinect "插件。你可以（也应该）将这个插件用于除了Kinect之外的其他类型的深度摄像头（它是一个老的插件，所以它保留了它的老名字）
 
@@ -93,3 +92,16 @@
 在设置了正确的主题和固定框架后，你应该从`PointCloud2`中看到类似下面的东西
 
 ![depth camera rviz](./depth_camera_rviz.png)
+
+图像显示将显示深度相机结果的灰度版本。如果你有Gazebo 8或更新版本，你可以将这些RViz结果与Gazebo Topic Visualizer中可用的深度图像结果进行比较。
+
+##### 疑难解答
+
+**问题：** `rostopic list`无法显示相机话题
+
+**解决：** 确保你在Gazebo中添加了正确的模型。确保Gazebo模拟正在运行，而不是暂停。检查`model.sdf`文件，确保`<plugin>`标签在文件的正确位置。尝试在verbose模式下运行Gazebo (`rosrun gazebo_ros gazebo --verbose`)，看看是否有任何有用的警告或错误信息可以帮助确定问题。
+
+**问题：** ROS的话题都列出来了，但我在Rviz中没有看到任何内容。
+
+**解决：** 确保在Gazebo中存在可供摄像机看到的对象。确保您在 RViz 中添加了 Image 或 PointCloud2 显示屏。检查您的 Image 或 PointCloud2 显示屏是否设置为显示正确的话题。检查图像或PointCloud2显示是否被禁用（复选框）。确保您的 RViz 固定框架与您在`<plugin>`标记中指定的`frameName`相匹配。确保传感器剪裁参数没有设置成所有点都被剪裁。
+

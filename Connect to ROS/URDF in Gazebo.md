@@ -1,6 +1,5 @@
-# URDF in Gazebo
-----------
-# 教程：在Gazebo中使用URDF
+## URDF in Gazebo
+## 教程：在Gazebo中使用URDF
 
 [统一机器人描述格式](http://www.ros.org/wiki/urdf)（URDF）是ROS中用于描述机器人所有元素的XML文件格式。要在Gazebo中使用URDF文件，必须添加一些额外的仿真专用标签，以便与Gazebo正常工作。本教程解释了在Gazebo中成功使用基于URDF的机器人的必要步骤，使您不必从头开始创建一个单独的SDF文件和重复描述格式。最后，Gazebo将自动将URDF转换为SDF
 
@@ -449,7 +448,7 @@ The cfmDamping element is deprecated and should be changed to implicitSpringDamp
 
 #### 在Gazebo中查看URDF
 
-在Gazebo中查看RRBot在本教程的开头已经介绍过了。对于你自己的自定义机器人，我们假设它的URDF生活在子文件夹`/urdf`中的名为`MYROBOT_description`的ROS包中。使用ROS从该位置打开URDF到Gazebo的方法在之前的教程[Using roslaunch Files](./Using roslaunch.md)中已经介绍过。如果你还没有完成该教程，现在就去做
+在Gazebo中查看RRBot在本教程的开头已经介绍过了。对于你自己的自定义机器人，我们假设它的URDF生活在子文件夹`/urdf`中的名为`MYROBOT_description`的ROS包中。使用ROS从该位置打开URDF到Gazebo的方法在之前的教程[Using roslaunch Files](./Using%20roslaunch.md)中已经介绍过。如果你还没有完成该教程，现在就去做
 
 从该教程中，你应该有两个ROS包为你的自定义机器人。`MYROBOT_description`和`MYROBOT_gazebo`。要查看你的机器人并在Gazebo中测试它，你现在应该能够运行这样的东西
 

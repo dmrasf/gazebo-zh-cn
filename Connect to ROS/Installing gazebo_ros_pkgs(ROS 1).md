@@ -1,12 +1,11 @@
-# 安装 `gagazebo_ros_pkgs`(ROS 1)
---------
-# 介绍
+## 安装 `gagazebo_ros_pkgs`(ROS 1)
+## 介绍
 
-用于与 Gazebo 接口的一套 ROS 包包含在一个名为`gazebo_ros_pkgs`的新元包中。在继续这里之前，请看 [ROS overview](./ROS\ overview.md) 以了解背景信息。
+用于与 Gazebo 接口的一套 ROS 包包含在一个名为`gazebo_ros_pkgs`的新元包中。在继续这里之前，请看 [ROS overview](./ROS%20overview.md) 以了解背景信息。
 
 这些说明是针对使用与ROS Lunar、ROS Kinetic和ROS Indigo完全集成的Gazebo版本。建议在继续阅读本教程之前，先阅读ROS/Gazebo版本的哪个组合。根据你的需求，你可能需要另一种安装方式。
 
-# 先决条件
+## 先决条件
 
 你应该了解ROS的基本概念，并通过ROS教程。
 
@@ -301,14 +300,4 @@ rosrun gazebo_run debug
 ```sh
 roslaunch gazebo_ros empty_world.launch
 ```
-
-
-
-
-
-
-
-
-
-
 

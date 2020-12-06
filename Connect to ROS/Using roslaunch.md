@@ -1,6 +1,5 @@
-# 使用 roslaunch
---------
-# 教程：使用 roslaunch 启动 Gazebo，world 文件和 URDF 模型
+## 使用 roslaunch
+## 教程：使用 roslaunch 启动 Gazebo，world 文件和 URDF 模型
 
 有许多方法可以启动Gazebo，开放世界模型和产卵机器人模型到模拟环境中。
 在本教程中，我们涵盖了ROS的做事方式：使用rosrun和roslaunch。
@@ -434,5 +433,5 @@ roslaunch MYROBOT_gazebo MYROBOT.launch
 
 #### 下一步
 
-现在你已经知道如何创建打开Gazebo、world 文件和URDF模型的`roslaunch`文件了，在[Using A URDF in Gazebo](http://gazebosim.org/tutorials/?tut=ros_urdf)创建你自己的 Gazebo-ready URDF 模型
+现在你已经知道如何创建打开Gazebo、world 文件和URDF模型的`roslaunch`文件了，在[Using A URDF in Gazebo](./URDF%20in%20Gazebo.md)创建你自己的 Gazebo-ready URDF 模型
 

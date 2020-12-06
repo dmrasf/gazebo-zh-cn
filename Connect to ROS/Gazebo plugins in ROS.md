@@ -245,9 +245,9 @@ roslaunch rrbot_description rrbot_rviz.launch
 
 #### 多功能摄像机
 
-**说明：**同步多个摄像机的快门，使它们一起发布图像。通常用于立体相机，使用与`Camera`插件非常相似的界面
+**说明：** 同步多个摄像机的快门，使它们一起发布图像。通常用于立体相机，使用与`Camera`插件非常相似的界面
 
-**注意：**现在只支持立体相机，参见[Github issue](https://github.com/osrf/gazebo_ros_pkgs/issues/13)
+**注意：** 现在只支持立体相机，参见[Github issue](https://github.com/osrf/gazebo_ros_pkgs/issues/13)
 
 ##### Atlas代码示例
 
@@ -313,7 +313,7 @@ roslaunch rrbot_description rrbot_rviz.launch
 
 ##### 深度相机
 
-**说明：**模拟一个类似Kinect的传感器，在Kinect插件中复制。将来可能会被合并
+**说明：** 模拟一个类似Kinect的传感器，在Kinect插件中复制。将来可能会被合并
 
 #### Openni Kinect
 
@@ -363,7 +363,7 @@ roslaunch rrbot_description rrbot_rviz.launch
 </gazebo>
 ```
 
-你可以在[Use a Gazebo Depth Camera with ROS](http://gazebosim.org/tutorials/?tut=ros_depth_camera)中找到关于配置深度相机的更详细描述
+你可以在[Use a Gazebo Depth Camera with ROS](./ROS%20Depth%20Camera%20Integration.md)中找到关于配置深度相机的更详细描述
 
 #### GPU Laser
 
